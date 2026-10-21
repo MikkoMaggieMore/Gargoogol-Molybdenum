@@ -11,7 +11,7 @@ void argCheck(int argCount) {
 	}
 }
 
-int main(int argc, char *argv[]) {
+void ggmb_main(int argc, char *argv[]) {
 	argCheck(argc);
 	cpr::Response r = cpr::Get(
 		cpr::Url{argv[1]},
@@ -19,5 +19,11 @@ int main(int argc, char *argv[]) {
 		cpr::Parameters{{"anon", "true"}, {"key", "value"}}
 	);
 	std::cout << r.text << "\n";
+}
+
+//Some ugly fugly shit
+int main(int argc, char *argv[]) {
+	ggmb_main(argc, argv);
+	exit(0);
 	return 0;
 }
