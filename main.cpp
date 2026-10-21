@@ -2,7 +2,7 @@
 
 #include <cpr/cpr.h>
 
-#define PROJECTNAME "placeholder"
+#define PROJECTNAME "Gargoogol Molybdenum"
 
 void argCheck(int argCount) {
 	if (argCount < 2) {
